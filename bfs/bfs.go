@@ -22,14 +22,6 @@ func personIsASeller(person string) bool {
 }
 
 func bfsSearch(graph Graph, start string) (string, bool) {
-	// data structure: work queue, visted set
-
-	// enqueue start
-	// while queue is not empty
-	//  if not visted
-	//   if is seller, found
-	//   if not enquue all neighbour
-
 	var queue []string
 	visited := make(map[string]bool)
 	queue = append(queue, start)
